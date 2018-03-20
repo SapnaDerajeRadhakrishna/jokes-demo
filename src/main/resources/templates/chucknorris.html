@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Tell A Joke</title>
+</head>
+<body>
+
+<table>
+	<tr>
+        <th>Joke For The Moment</th>  
+    </tr>
+    <tr th:each="joke : ${joke}">
+        <td th:text="${joke}">HAHAHAHA</td>
+    </tr>
+</table>
+
+</body>
+</html>
