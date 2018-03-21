@@ -6,14 +6,8 @@
 </head>
 <body>
 
-<table>
-	<tr>
-        <th>Joke For The Moment</th>  
-    </tr>
-    <tr th:each="joke : ${joke}">
-        <td th:text="${joke}">HAHAHAHA</td>
-    </tr>
-</table>
+<h1>Joke For The Moment</h1>
+<p th:text="${joke}">HAHAHAHA </p>
 
 </body>
 </html>
